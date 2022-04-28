@@ -45,7 +45,7 @@ returns """
   $html =~ s{<p>(.+?)\{\.(\w+)\}</p>}{<p class="$2">$1</p>}gs;         # pandoc CSS
 #warn "  converting to '$html'";
 #warn "  original ".Dumper $_[0];
-  return TM2::Literal->new ($html, TM2::TempleScript->LANG . 'html-fragment');
+  return TM2::Literal->new ($html, TM2::TempleScript->LANG . 'html;fragment=1');
 """ ^^ lang:perl !
 
 md:sum isa ts:overloaded
