@@ -13,7 +13,7 @@ my $debian = Module::Build->subclass(
     code => <<'SUBCLASS' );
 
 sub DEBVERSION {
-    return 20;
+    return 21;
 }
 
 sub ACTION_debian {
